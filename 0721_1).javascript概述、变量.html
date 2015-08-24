@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<font color="black" id="col">颜色</font>	<br />
+			<a href="javascript:change('red')">红色</a>
+			<a href="javascript:change('green')">绿色</a>
+			
+			<p>
+				<img src="img/ad25.png" />
+
+			<a onmouseover="change2('img/ad25.png')">1</a><a onmouseover="change2('img/ad26.png')">2</a><a onmouseover="change2('img/ad27.png')">3</a>
+			</p>
+		
+			
+<script>
+	function change(color){
+		var f = document.getElementById("col");
+//		alert()
+//		f.color="yellow"
+		f.color=color;
+	}
+	
+	function change2(imgsrc){
+		//获取图片对象
+		var img = document.getElementsByTagName('img')[0];
+//		alert(img);
+		//改变对象的src属性
+		img.src=imgsrc;
+		
+		
+		
+	}
+	
+</script>			
+			
+		</font>
+	</body>
+</html>

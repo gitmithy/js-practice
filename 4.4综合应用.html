@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	
+<!--	按下事件onekeydown调用maskingKeyboad()函数屏蔽键盘的相关事件-->
+	
+	<body onkeydown="maskingKeyboad()">
+
+<script type="text/javascript">
+
+//通过自定义函数实现屏蔽鼠标和键盘的相关事件
+
+
+function maskingKeyboad(){
+	if(event.keyCode==8){
+		event.keyCode=0;
+		event.returnValue=false;
+		alert("当前设置不允许使用退格键");
+	
+}
+if(event.keyCode==13){
+	event.keyCode=0;
+	event.returnValue=false;
+	alert("当前设置不允许使用回车键");
+}
+if(event.keyCode==116){
+	event.keyCode=0;
+	event.returnValue=false;
+	alert("当前设置不允许使用F5刷新键");
+}
+
+if((event.altKey)&&((window.event.keyCode==37)||(window.event.keyCode==39))){
+	event.returnValue=false;
+	alert("当前设置不允许使用alt+方向键←或方向键→");
+}
+if((event.ctrlKey)&&(window.event.keyCode==78)){
+	event.returnValue=false;
+	alert("当前设置不允许使用Crlt+N新建IE窗口");
+}
+if((event.shiftKey)&&(window.event.keyCode==121)){
+	event.returnValue=false;
+	alert("当前设置不允许使用shift+F10");
+}
+}
+
+
+
+
+</script>
+<!--<script type="text/javascript">
+
+	function rightKey(){
+		if(event.button==2){
+			event.returnValue=false;
+			alert("禁止使用鼠标右键");
+		}
+}
+
+document.onmousedown=rightKey();
+
+</script>-->
+hao123
+
+	</body>
+</html>

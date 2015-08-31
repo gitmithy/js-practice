@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	
+
+	
+	<body>
+<script>
+ var outter=300;  /*定义局部变量*/
+ function add(num1,num2){  /*定义外部函数*/
+ 	function innerAdd(){   /*定义内部函数*/
+ 		alert("参数与全局变量的和为:"+(num1+num2+outter));
+ 	}
+ 	return innerAdd();     /*调用内部函数*/
+ }
+ 
+
+</script>
+
+<script>
+add(100,200);                /*调用外部函数*/
+
+</script>
+
+
+
+
+	</body>
+</html>

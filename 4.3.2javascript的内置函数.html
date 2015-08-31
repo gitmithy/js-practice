@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	
+
+	
+	<body>
+<script>
+	
+/*parseInt函数*/
+
+var num1="123abc"
+var num2="abc123"
+document.write("(1)使用parseInt()函数<br />");
+document.write("123abc转化结果为:"+parseInt(num1)+"<br />")
+document.write("abc123转化结果为:"+parseInt(num2)+"<br /><br />")	
+
+/*parseFloat函数*/
+var num3="123.456abc"
+var num4="a23.456"
+document.write("(2)使用parseFloat()函数<br />");
+document.write("123.456转化结果为:"+parseFloat(num3)+"<br />");
+document.write("abc123转化结果为:"+parseFloat(num2)+"<br /><br />");	
+	
+/*isNaN函数*/
+document.write("(3)使用isNaN()函数<br />");
+document.write("123.456abc转化后是否为NaN:"+isNaN(parseFloat(num3))+"<br />")
+document.write("abc123转化后是否为NaN:"+isNaN(parseFloat(num2))+"<br /><br />")
+
+/*isFinite函数*/
+document.write("(4)使用isFinite()函数<br />");
+document.write("10除以10的结果是否为无穷大:"+isFinite(10/10)+"<br />");
+document.write("10除以0的结果是否为无穷大:"+isFinite(10/10)+"<br /><br />");
+
+/*encodeURI()函数*/
+document.write("(5)使用encodeURI函数<br />");
+document.write("转化网络资源地址为:"+encodeURI("http://127.0.0.1/index.html?name=测试"))+"<br /><br />";
+
+/*decodeURI()函数*/
+document.write("(6)使用decodeURI()函数<br />")
+document.write("转化网络资源地址的字符串为:"+decodeURI(encodeURI("http://127.0.0.1/index.html?name=测试"))+"<br /><br />")
+
+</script>
+
+
+
+
+
+
+	</body>
+</html>

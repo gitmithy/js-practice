@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+<script>
+
+//var result=Math.pow(5,3);
+//alert(result)	
+//	
+//var numobj1=new Number();
+//var numobj2=new Number(100);
+//document.write(numobj1+"<br />")
+//document.write(numobj2+"<br />")
+
+function createCode(digit){
+	
+	var result=""
+	for(i=0;i<parseInt(digit);i++){
+		result+=parseInt(Math.random()*10).toString();
+	}
+	return result;
+}
+</script>
+<script>
+
+function deal(){
+	result.innerHTML="&nbsp;&nbsp;生成的验证码："+createCode(form.digit.value);
+}
+
+</script>
+
+
+<div id="result">&nbsp;&nbsp;生成的验证码：</div>
+<form><input type="text" value="form"></form>
+<input name="Sumbit" type="button" value="生成" onclick="deal()" />
+	</body>
+</html>

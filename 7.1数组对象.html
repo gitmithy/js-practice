@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+<script language="JavaScript">
+var arr=new Array(1,2,3,4,5,6);
+
+
+document.write("1.concat()")
+document.write("<br>")
+document.write("连接到当前数组的尾端")
+document.write("<br>")
+document.write(arr.concat(7,8,9,10));
+document.write("<br>")
+document.write("添加数组")
+document.write("<br>")
+var arr1=new Array('a','b','c','d');
+var arr2=new Array('e','f','g','h');
+document.write(arr1.concat(arr2));
+document.write("<br>")
+document.write("<br>")
+
+
+document.write("2.shift()")
+document.write("<br>")
+var arr=new Array(1,2,3,4,5,6);
+var del=arr.shift();
+document.write('删除元素为:'+del+';删除后的数组为:'+arr);
+document.write("<br>")
+document.write("<br>")
+
+
+document.write("3.pop()")
+document.write("<br>")
+var arr=new Array(1,2,3,4,5,6);
+var del=arr.pop();
+document.write('删除元素为：'+del+';删除后的数组为:'+arr);
+
+
+
+	
+	
+	
+</script>
+
+<script>
+document.write("<br>")
+document.write("<br>")
+var arr=new Array(1,2,3);
+document.write('push()方法');
+document.write("<br>");
+document.write('原数组:'+arr+'<br />');
+document.write('添加元素后的数组长度:'+arr.push(4,5,6)+'<br />');
+document.write('新数组:'+arr);
+</script>
+
+
+<script>
+document.write("<br>")
+
+document.write("<br>")
+document.write('unshift()方法');
+document.write("<br>")
+var arr=new Array(4,5,6);
+document.write('原数组:'+arr+'<br />');
+arr.unshift(1,2,3);
+document.write('新数组：'+arr);
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+	</body>
+</html>

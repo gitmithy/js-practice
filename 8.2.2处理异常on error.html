@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	
+	
+
+
+<script language="JavaScript">
+	
+	window.onerror=function(msg,url,line){
+		alert("你调用的函数不存在\n"+msg+"\n"+url+"\n"+line+"\n");
+		return true
+		
+		
+	}
+	function ImgLoad(){
+		document.images[0].onerror=function(){
+			alert("你调用的图像不存在\n");
+		};
+		document.images[0].src="test.gif";
+	}
+	</script>
+	</head>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+<body onload="ImgLoad()">	
+<script language="JavaScript"></script>	
+onHave();
+
+	
+</script>	
+	
+
+
+<img />
+
+
+
+
+
+
+
+
+
+	</body>
+</html>

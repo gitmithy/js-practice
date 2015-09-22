@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	
+
+
+	<body>
+		
+		<!--设置链接颜色
+		
+	<font size="10" face="微软雅黑"><a id="a1" href="http://hao123.com">javascript技术论坛 </a> </font>		
+		
+		<script language="JavaScript">
+			
+			document.vlinkColor="#000";
+			document.linkColor="#00AA00";
+			document.alinkColor="mediumturquoise"
+			
+		</script>-->
+		
+		
+<!--	设置背景颜色-->
+
+<script type="text/javascript">
+	
+	var Arraycolor=new Array("#00ff66","#ffff99","#99ccff","#ffccff","#ffcc99","00ffff");
+	var n=0;
+	function changecolors(){
+		n++;
+		if(n==(Arraycolor.length-1))n=0;
+		document.bgColor=Arraycolor[n];
+		document.fgColor=Arraycolor[n-1];
+		setTimeout("changecolors()",1000);
+	}
+	changecolors();
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</script>
+	
+	
+	
+		
+		
+		
+		
+		
+		
+		
+	</body>
+</html>

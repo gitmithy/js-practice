@@ -14,19 +14,19 @@
 
 var num1="123abc"
 var num2="abc123"
-document.write("(1)使用parseInt()函数<br />");
+document.write("(1)使用parseInt()函数将字符型转化为整形<br />");
 document.write("123abc转化结果为:"+parseInt(num1)+"<br />")
 document.write("abc123转化结果为:"+parseInt(num2)+"<br /><br />")	
 
 /*parseFloat函数*/
 var num3="123.456abc"
 var num4="a23.456"
-document.write("(2)使用parseFloat()函数<br />");
+document.write("(2)使用parseFloat()函数将字符型转化为浮点型<br />");
 document.write("123.456转化结果为:"+parseFloat(num3)+"<br />");
 document.write("abc123转化结果为:"+parseFloat(num2)+"<br /><br />");	
 	
 /*isNaN函数*/
-document.write("(3)使用isNaN()函数<br />");
+document.write("(3)使用isNaN()函数&nbsp;判断一个数值是否为NaN（非数字）<br />");
 document.write("123.456abc转化后是否为NaN:"+isNaN(parseFloat(num3))+"<br />")
 document.write("abc123转化后是否为NaN:"+isNaN(parseFloat(num2))+"<br /><br />")
 

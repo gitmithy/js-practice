@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script language="JavaScript">
+
+			function openWin(){
+				var dw;
+				dw=window.open();
+				dw.document.open();
+				dw.document.write("<html><head><title>一个新的窗口</title>");
+				dw.document.write("</head>");
+				dw.document.write("<body>");
+				dw.document.write("<img name='i1' src='img/docs-github.png'><br />");
+				dw.document.write("这里是写入的新内容<br />");
+				dw.document.write("</body></html>");
+				dw.document.close();
+			}
+				
+		</script>		
+		
+		
+	</head>
+	
+	<body>
+		
+		<input type="button" value="打开一个新文档" onclick="openWin();" />
+		
+
+		
+	</body>
+</html>

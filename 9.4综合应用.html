@@ -17,7 +17,14 @@
 				dw.document.write("</body></html>");
 				dw.document.close();
 			}
-				
+			function addSelect(){
+				var sel=document.createElement("select");
+				sel.options[0]=new Option("篮球","");
+				sel.options[1]=new Option("足球","");
+				sel.options[2]=new Option("排球","");
+				sel.options[3]=new Option("乒乓球","");
+				document.form1.appendChild(sel);
+			}
 		</script>		
 		
 		
@@ -27,7 +34,14 @@
 		
 		<input type="button" value="打开一个新文档" onclick="openWin();" />
 		
-
+		<form name="form1">
+		
+			<input type="button" name="btn1" value="动态添加下拉菜单" onclick="addSelect();" />
+		
+		
+		
+		
+		</form>
 		
 	</body>
 </html>
